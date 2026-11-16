@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JadePOS – Support &amp; Hilfe</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      background: #171c26;
+      color: #fff;
+      padding: 28px 32px;
+      border-radius: 16px;
+      margin-bottom: 24px;
+    }
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 1.7rem;
+    }
+    header p {
+      margin: 0;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+    .nav {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      color: #fff;
+      background: rgba(255,255,255,0.14);
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .nav a:hover { background: rgba(255,255,255,0.24); }
+    section.card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .contact-box {
+      background: #f0fdfa;
+      border: 1px solid #99f6e4;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 12px;
+    }
+    a { color: var(--accent); }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>JadePOS – Support &amp; Technischer Service</h1>
+      <p>Hilfe zur Einrichtung von iPad-Kasse, iPhone-Backoffice, Bondruckern und SumUp</p>
+      <div class="nav">
+        <a href="#de">Deutsch</a>
+        <a href="#en">English</a>
+        <a href="https://fynnhicken.github.io/jade-pos-privacy/">Datenschutz / Privacy</a>
+      </div>
+    </header>
+
+    <section class="card" id="de">
+      <h2>Support &amp; Kontakt (Deutsch)</h2>
+      <div class="contact-box">
+        <strong>Direkter Support-Kontakt:</strong><br />
+        Anbieter: Fynn Hicken<br />
+        E-Mail: <a href="mailto:fynn.hicken@gmail.com">fynn.hicken@gmail.com</a><br />
+        Reaktionszeit: in der Regel innerhalb von 24 Stunden (werktags)
+      </div>
+
+      <h3>Erste Schritte &amp; häufige Fragen</h3>
+      <ul>
+        <li><strong>Server verbinden (iPad):</strong> Auf dem Anmelde-Bildschirm auf <em>Server-Zugangsdaten</em> tippen, Backend-URL, Benutzername und Passwort eingeben und mit <em>Verbinden &amp; Synchronisieren</em> bestätigen.</li>
+        <li><strong>Server verbinden (iPhone Backoffice):</strong> Im Tab <em>Bons &amp; Setup</em> unter <em>Server-Verbindung</em> dieselbe Backend-URL samt Zugangsdaten eintragen.</li>
+        <li><strong>ESC/POS-Bondrucker einrichten:</strong> In der Verwaltung bzw. im Backoffice die lokale IP-Adresse und den Port (Standard: <code>9100</code>) hinterlegen. Das iPad und der Bondrucker müssen sich im selben WLAN/LAN befinden; bitte beim ersten Start die iOS-Berechtigung <em>Lokales Netzwerk</em> erlauben.</li>
+        <li><strong>SumUp Kartenterminal koppeln:</strong> Im iPad-Menü <em>Verwaltung → SumUp Kartenterminal</em> Bluetooth aktivieren, mit dem Händlerkonto anmelden und das Terminal koppeln.</li>
+        <li><strong>Offline-Modus:</strong> Bei kurzzeitigen WLAN-Unterbrechungen lassen sich Artikel weiterhin kassieren. Sobald wieder Verbindung besteht, werden ausstehende Belege automatisch synchronisiert.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="en">
+      <h2>Support &amp; Help (English)</h2>
+      <div class="contact-box">
+        <strong>Direct Support Contact:</strong><br />
+        Developer: Fynn Hicken<br />
+        Email: <a href="mailto:fynn.hicken@gmail.com">fynn.hicken@gmail.com</a><br />
+        Typical response time: within 24 hours on business days
+      </div>
+
+      <h3>Getting Started &amp; Troubleshooting</h3>
+      <ul>
+        <li><strong>Connecting to your POS Server (iPad):</strong> Tap <em>Server-Zugangsdaten</em> on the PIN screen, enter your backend URL, username, and password, then tap <em>Verbinden &amp; Synchronisieren</em>.</li>
+        <li><strong>Connecting on iPhone (Mobile Backoffice):</strong> Open the <em>Bons &amp; Setup</em> tab, enter your backend URL and credentials, and connect.</li>
+        <li><strong>Network Receipt Printers (ESC/POS):</strong> Configure printer IP and port (default <code>9100</code>) in settings. Ensure the iPad is on the same local network and grant <em>Local Network</em> permission when prompted by iOS.</li>
+        <li><strong>SumUp Card Reader:</strong> Enable Bluetooth and Location permissions when prompted and pair your SumUp reader inside <em>Verwaltung → SumUp Kartenterminal</em>.</li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2026 JadePOS &ndash; Fynn Hicken &middot;
+      <a href="https://fynnhicken.github.io/jade-pos-privacy/">Datenschutz / Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>
