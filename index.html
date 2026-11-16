@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JadePOS – Datenschutzerklärung &amp; Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      background: #171c26;
+      color: #fff;
+      padding: 28px 32px;
+      border-radius: 16px;
+      margin-bottom: 24px;
+    }
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 1.7rem;
+    }
+    header p {
+      margin: 0;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+    .lang-nav {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .lang-nav a {
+      color: #fff;
+      background: rgba(255,255,255,0.14);
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .lang-nav a:hover { background: rgba(255,255,255,0.24); }
+    section.card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+    h3 {
+      margin-top: 22px;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    a { color: var(--accent); }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>JadePOS – Datenschutzerklärung &amp; Privacy Policy</h1>
+      <p>Gültig für die JadePOS iPad- und iPhone-App (B2B-Kassensystem &amp; mobiles Backoffice)</p>
+      <div class="lang-nav">
+        <a href="#de">Deutsch</a>
+        <a href="#en">English</a>
+        <a href="#support">Support &amp; Kontakt</a>
+      </div>
+    </header>
+
+    <section class="card" id="de">
+      <h2>Datenschutzerklärung (Deutsch)</h2>
+      <p class="meta">Stand: November 2026</p>
+
+      <h3>1. Verantwortlicher</h3>
+      <p>
+        Verantwortlicher Anbieter der App <strong>JadePOS</strong>:<br />
+        Fynn Hicken<br />
+        E-Mail: <a href="mailto:fynn.hicken@gmail.com">fynn.hicken@gmail.com</a>
+      </p>
+
+      <h3>2. Grundsatz: Keine zentrale Datenerhebung durch den App-Entwickler</h3>
+      <p>
+        JadePOS ist eine lokale / unternehmensintern betriebene Kassen- und Backoffice-Software (B2B).
+        Der App-Entwickler betreibt keine zentralen Tracking-, Analyse- oder Werbeserver und speichert keine
+        Kassen-, Produkt- oder Umsatzdaten der Nutzer auf eigenen Cloud-Systemen.
+      </p>
+
+      <h3>3. Kommunikation mit dem Kassenserver des Betriebs</h3>
+      <p>
+        Alle Produkt-, Bestell-, Kassenjournal-, Lager- und Einstellungsdaten werden ausschließlich zwischen der App
+        und dem vom jeweiligen Betrieb selbst konfigurierten Kassenserver (lokal im Netzwerk oder selbst gehostet) übertragen.
+        Für den Offline-Betrieb werden Artikeldaten, Bediener-PIN-Prüfsummen (SHA-256) und noch nicht übertragene
+        Offline-Belege lokal auf dem Gerät gespeichert (<code>UserDefaults</code>), bis wieder eine Serververbindung besteht.
+      </p>
+
+      <h3>4. Zahlungsabwicklung über SumUp (optional)</h3>
+      <p>
+        Sofern der jeweilige Betrieb Kartenzahlungen über das integrierte <strong>SumUp iOS SDK</strong> aktiviert,
+        erfolgt die Verarbeitung von Zahlungsvorgängen sowie ggf. von Händler- und Gerätedaten direkt zwischen dem
+        SumUp-Konto des Betriebs und der SumUp Limited gemäß den Datenschutzbestimmungen von
+        <a href="https://www.sumup.com/de-de/datenschutzbestimmungen/" target="_blank" rel="noopener">SumUp</a>.
+        JadePOS speichert selbst keine vollständigen Kreditkarten- oder Kontodaten.
+      </p>
+
+      <h3>5. Verwendete Geräteberechtigungen</h3>
+      <ul>
+        <li><strong>Lokales Netzwerk:</strong> Verbindung zu lokalen ESC/POS-Bondruckern (Port 9100) und einem im WLAN/LAN betriebenen Kassenserver.</li>
+        <li><strong>Bluetooth:</strong> Kopplung und Kommunikation mit SumUp-Kartenterminals.</li>
+        <li><strong>Standort (während der Nutzung):</strong> Vom SumUp SDK aus regulatorischen Gründen bei Kartenzahlungen erforderlich.</li>
+        <li><strong>Kamera (optional):</strong> Vom SumUp SDK zum Scannen von Codes im Zahlungs-/Einrichtungsprozess bereitgestellt.</li>
+      </ul>
+
+      <h3>6. Kein Tracking &amp; keine Werbung</h3>
+      <p>
+        Die App verwendet keine Werbe-IDs (IDFA), kein Cross-App-Tracking und keine Analyse-SDKs Dritter.
+      </p>
+
+      <h3>7. Rechte betroffener Personen</h3>
+      <p>
+        Betroffene Personen haben nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung.
+        Da die Kassendaten vom jeweiligen Betrieb auf dessen eigenem Server verarbeitet werden, richten Sie Anfragen zu Ihren
+        Beleg- oder Mitarbeiterdaten bitte direkt an den jeweiligen Betrieb; für Fragen zur App wenden Sie sich an
+        <a href="mailto:fynn.hicken@gmail.com">fynn.hicken@gmail.com</a>.
+      </p>
+    </section>
+
+    <section class="card" id="en">
+      <h2>Privacy Policy (English)</h2>
+      <p class="meta">Last updated: November 2026</p>
+
+      <h3>1. Controller / Developer</h3>
+      <p>
+        <strong>JadePOS</strong> is provided by:<br />
+        Fynn Hicken<br />
+        Email: <a href="mailto:fynn.hicken@gmail.com">fynn.hicken@gmail.com</a>
+      </p>
+
+      <h3>2. No Developer Cloud Tracking or Data Collection</h3>
+      <p>
+        JadePOS is a B2B Point-of-Sale and mobile backoffice application. The developer does not collect, track, sell, or
+        process business sales, product catalogs, or customer data on developer-owned analytics or advertising servers.
+      </p>
+
+      <h3>3. Merchant POS Server &amp; Local Offline Cache</h3>
+      <p>
+        All POS operations communicate exclusively with the server URL configured by the merchant. To support uninterrupted
+        checkout during temporary network outages, cached product catalogs, PIN verification hashes (SHA-256), and pending
+        offline receipts are stored locally on the device until synchronized with the merchant's POS server.
+      </p>
+
+      <h3>4. Optional Card Payments via SumUp SDK</h3>
+      <p>
+        When card payments are enabled by a merchant, JadePOS uses the official <strong>SumUp iOS SDK</strong>. Payment
+        and merchant verification data required for card processing (including device identifiers, merchant account info,
+        and transaction location) is transmitted directly to SumUp under
+        <a href="https://www.sumup.com/privacy/" target="_blank" rel="noopener">SumUp's Privacy Policy</a> solely for
+        payment functionality and never for tracking.
+      </p>
+
+      <h3>5. Device Permissions</h3>
+      <ul>
+        <li><strong>Local Network:</strong> Connects to local ESC/POS receipt printers and on-premise POS servers on the merchant's LAN.</li>
+        <li><strong>Bluetooth:</strong> Connects to SumUp card readers.</li>
+        <li><strong>Location (When In Use):</strong> Required by the SumUp SDK during card transactions.</li>
+        <li><strong>Camera:</strong> Used only when needed by the SumUp SDK during terminal pairing/code scanning.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="support">
+      <h2>Support &amp; Kontakt / Contact</h2>
+      <p>
+        Bei technischen Fragen zur App JadePOS oder Anfragen zum Datenschutz erreichst du uns unter:<br />
+        For technical support or privacy inquiries regarding JadePOS, please contact:<br />
+        <strong>E-Mail:</strong> <a href="mailto:fynn.hicken@gmail.com">fynn.hicken@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>&copy; 2026 JadePOS &ndash; Fynn Hicken</footer>
+  </div>
+</body>
+</html>
